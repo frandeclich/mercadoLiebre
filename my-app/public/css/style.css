@@ -188,11 +188,72 @@ section .contenido article span{
     margin: 20px 0;
 }
   
-  .copyright {
+.copyright {
     text-align: center;
     padding: 10px 0;
     border-top: 1px solid var(--ColorGris-claro);
     border-bottom: 1px solid var(--ColorGris-claro);
     color: var(--ColorGris-oscuro)
 }
+
+/* MEDIA */ 
+
+/* TABLET */
+@media(min-width:426px){
+    header .comprar-sin-tarjeta{
+      margin: 0;
+      text-align: end;
+      padding: 0;
+    }
   
+    header .comprar-sin-tarjeta p{
+      margin: 0;
+      line-height: 20px;
+      width: 80%;
+      position: relative;
+      right: -14px;
+    }
+  
+    header .comprar-sin-tarjeta i{
+      position: relative;
+      left: 40px;
+      top: 4px;
+    }
+  
+    header ul li {
+        justify-content: space-between;
+        padding-right: 12px;
+    }
+    header ul.usuario li:last-child {
+        padding-right: 0;
+    }
+    .banner img {
+      display: block;
+    }
+  }
+  
+  /*ESCRITORIO*/
+  
+  @media(min-width:1024px) {
+    header .comprar-sin-tarjeta{
+      align-items: center;
+    }
+    header .comprar-sin-tarjeta p{
+      width: 100%;
+      right: 0px;
+      
+    }
+    header .comprar-sin-tarjeta i{
+      left: 18px;
+      top: 0px;
+    }
+    footer article h4 {
+        font-size: 1.3rem;
+    }
+    footer article p {
+        font-size: 0.9rem;
+    }
+    footer .copyright {
+        font-size: 0.7rem;
+    }
+  }
